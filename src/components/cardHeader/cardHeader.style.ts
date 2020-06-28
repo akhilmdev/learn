@@ -1,4 +1,5 @@
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
+import { grey } from '@material-ui/core/colors';
 
 export const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -21,9 +22,19 @@ export const useStyles = makeStyles((theme: Theme) =>
             marginBottom: theme.spacing(0.5),
             padding: 0,
         },
-        circleButton: {
-            width: '29px',
-            height: '28px',
+        toolBar: {
+            display: 'flex',
+            margin: 'auto 30px'
         },
+        appBar: {
+            height: '90px',
+            backgroundColor: '#212121'
+        },
+        logo: {
+            maxWidth: '40px',
+            background: 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
+            marginRight: '10px',
+            borderRadius: '50%'
+        }
     }),
 );

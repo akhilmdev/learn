@@ -1,3 +1,3 @@
-import CardHeader from './component';
+import CardHeader from './cardHeader';
 
 export default CardHeader;

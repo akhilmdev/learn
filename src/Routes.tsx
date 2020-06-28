@@ -13,7 +13,7 @@ const Routes = (props: RoutesProps) => {
     if (listofPages.indexOf(location.pathname) > -1) {
         return (
             <Switch location={location}>
-                <Route path="/" component={Login} />
+                <Route path="/" component={Dashboard} />
                 <Route path="/login" component={Login} />
             </Switch>
         );

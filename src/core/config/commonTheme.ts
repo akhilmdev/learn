@@ -1,17 +1,16 @@
-import { useSelector } from 'react-redux';
 import { createMuiTheme } from '@material-ui/core/styles';
-import { DefaultStore } from '../Interface/store.interface';
+import { grey } from '@material-ui/core/colors';
 
 function CommonTheme() {
-    const { layout } = useSelector((state: DefaultStore) => state.settings);
     const theme = createMuiTheme({
         palette: {
             primary: {
-                main: layout.primary,
+                main: grey[900],
             },
             secondary: {
-                main: layout.secondary,
+                main: grey[800],
             },
+
         },
         typography: {
             fontFamily: [
